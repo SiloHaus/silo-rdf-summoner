@@ -1,11 +1,11 @@
 import { useFormContext } from "react-hook-form";
+import { styled } from "styled-components";
 
 import { Buildable, DataMd, Field, Label } from "@daohaus/ui";
 import { formatValueTo, fromWei, isNumberish } from "@daohaus/utils";
-import { styled } from "styled-components";
 
 const SupplyValue = styled(DataMd)`
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 `;
 
 export const TotalSupplyDisplay = (props: Buildable<Field>) => {
@@ -13,6 +13,7 @@ export const TotalSupplyDisplay = (props: Buildable<Field>) => {
 
   const lootToShaman = watch("lootToShaman");
   const lootToVault = watch("lootToVault");
+  const tokenSymbol = watch("lootTokenSymbol");
 
   const bigShaman = isNumberish(lootToShaman)
     ? BigInt(lootToShaman || "0")
@@ -26,10 +27,10 @@ export const TotalSupplyDisplay = (props: Buildable<Field>) => {
     <div>
       <Label>Total Supply</Label>
       <SupplyValue>
-        {formatValueTo({
+        {`${formatValueTo({
           value: fromWei(totalSupply.toString()),
           format: "number",
-        })}
+        })} ${tokenSymbol}`}
       </SupplyValue>
     </div>
   );
