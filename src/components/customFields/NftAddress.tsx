@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useFormContext } from "react-hook-form";
 
 import { Buildable, WrappedInput, Field } from "@daohaus/ui";
-import { useCurrentDao } from "@daohaus/moloch-v3-hooks";
 import { EthAddress, isEthAddress } from "@daohaus/utils";
 
 import { fetchNftContractMetadata } from "../../utils/sequenceHelper";
