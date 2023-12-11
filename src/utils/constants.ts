@@ -35,10 +35,10 @@ export const CLAIM_SHAMAN_PERMISSIONS = "2";
 export const SHARE_NAME = "Silo Voting Power";
 export const SHARE_SYMBOL = "sVOTE";
 export const DEFAULT_SUMMON_VALUES = {
-  //   votingPeriodInSeconds: 259200,
-  votingPeriodInSeconds: 120,
-  //   gracePeriodInSeconds: 172800,
-  gracePeriodInSeconds: 60,
+    votingPeriodInSeconds: 259200,
+  // votingPeriodInSeconds: 120,
+    gracePeriodInSeconds: 172800,
+  // gracePeriodInSeconds: 60,
   newOffering: "10000000000000000",
   //   quorum: "20",
   quorum: "0",
