@@ -191,10 +191,11 @@ export const APP_FORM: Record<string, CustomFormLego> = {
           "Delegated account to manage the DAO. Can be changed and or removed later.",
         fields: [APP_FIELD.MANAGER_ACCOUNT],
       },
-      APP_FIELD.SALT_NONCE_FIELD,
     ]
-  }
+  },
+  APP_FIELD.SALT_NONCE_FIELD,
     ],
+    
   },
 };
 

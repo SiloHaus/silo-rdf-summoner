@@ -20,6 +20,7 @@ const supportedNetorks = {
   "0x5": HAUS_NETWORK_DATA["0x5"],
   // "0x1": HAUS_NETWORK_DATA["0x1"],
   "0xa": HAUS_NETWORK_DATA["0xa"],
+  "0x2105": HAUS_NETWORK_DATA["0x2105"],
 };
 
 const queryClient = new QueryClient();

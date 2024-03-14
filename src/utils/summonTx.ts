@@ -60,7 +60,7 @@ export const assembleLootSummonerArgs = (args: ArbitraryState) => {
   const formValues = args.appState.formValues as Record<string, unknown>;
   const chainId = args.chainId as ValidNetwork;
   let txArgs: [string, string, string, string[], string];
-  console.log(">>>>>", formValues);
+  console.log(">>>>>??", formValues);
 
   if (!isString(formValues["saltNonce"])) {
     throw new Error("Invalid nonce");

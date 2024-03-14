@@ -9,6 +9,7 @@ export const SaltNonce = (props: Buildable<Field>) => {
 
 
   useEffect(() => {
+    console.log("nonce", getNonce());
     setValue(props.id, getNonce());
     
   }, []);
